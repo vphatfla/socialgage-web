@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Text, Button, VStack, HStack, Image } from '@chakra-ui/react';
-import Sample from '../image/sample1.jpg'
+import Sample from '../../image/sample1.jpg'
 import { useInView } from 'react-intersection-observer';
 
 

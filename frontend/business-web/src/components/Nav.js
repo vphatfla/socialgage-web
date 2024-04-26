@@ -5,17 +5,17 @@ import {
     Link,
     Image,
 } from '@chakra-ui/react';
-import Logo from './image/logo.png';
+import Logo from '../image/logo.png';
 
 function NavBar() {
     return (
         <Flex p={4} color="black" justifyContent="space-between" alignItems="center">
             <Flex>
                 <Box p="2" ml="10">
-                    <Link href="#" _hover={{ textDecoration: 'none' }}>Home</Link>
+                    <Link href="/" _hover={{ textDecoration: 'none' }}>Home</Link>
                 </Box>
                 <Box p="2" ml="10">
-                    <Link href="#" _hover={{ textDecoration: 'none' }}>About</Link>
+                    <Link href="/about" _hover={{ textDecoration: 'none' }}>About</Link>
                 </Box>
                 <Box p="2" ml="10">
                     <Link href="#" _hover={{ textDecoration: 'none' }}>Services</Link>

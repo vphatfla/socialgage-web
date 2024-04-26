@@ -1,9 +1,8 @@
 import React from 'react';
-import Home1 from './Home/Home1';
-import Home2 from './Home/Home2';
+import Home1 from './Home1';
+import Home2 from './Home2';
 
 function Home() {
-
     return (
         <>
           <Home1 />
