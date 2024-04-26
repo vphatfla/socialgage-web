@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Button, VStack, } from '@chakra-ui/react';
-import Background from '../image/background1.jpg';
+import Background from '../../image/background1.jpg';
 
 
 function Home1() {

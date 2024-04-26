@@ -5,7 +5,7 @@ import {
     Link,
     Image,
 } from '@chakra-ui/react';
-import Logo from './image/logo.png';
+import Logo from '../image/logo.png';
 
 function NavBar() {
     return (
