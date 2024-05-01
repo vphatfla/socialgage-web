@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home.js';
 import About from './pages/About/About.js';
 import SlidingText from './components/SlidingText.js';
-// import Services from './Services';
 import NavBar from './components/Nav.js';
+import Footer from './components/Footer.js';
 
 function App() {
     return (
@@ -19,6 +19,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     {/* <Route path="/services" element={<Services />} /> */}
                 </Routes>
+                <Footer />
             </Router>
         </ChakraProvider>
     );

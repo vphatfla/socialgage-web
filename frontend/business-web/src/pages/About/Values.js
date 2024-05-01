@@ -5,7 +5,7 @@ import Background1 from '../../image/background1.jpg'
 function Values() {
   return (
     <Box bgImage={Background1} bgSize="cover" bgPosition="center" py="10">
-            <SimpleGrid columns={{ base: 1, md: 3 }} spacing="40px" mb="10" p={100}>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="40px" mb="10" p={100}>
             {/* Repeat this Box for each value you have */}
             <Box bg="gray.100" p="4" borderRadius="md">
                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
@@ -37,8 +37,8 @@ function Values() {
                 </Text>
             </Box>
             {/* ... other value boxes */}
-            </SimpleGrid>
-        </Box>
+        </SimpleGrid>
+    </Box>
   );
 }
 
