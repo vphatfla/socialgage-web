@@ -12,7 +12,7 @@ function Home2() {
 
     return (
         <Box>
-            <HStack
+            <HStack 
                 spacing={10} // This adds space between the image and text
                 w="100%"
                 p={10}
