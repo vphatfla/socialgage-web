@@ -12,7 +12,7 @@ import {
     useBreakpointValue
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import Logo from '../image/logo.png';
+import Logo from '../image/logo1.png';
 
 function NavBar() {
     // Determine if the viewport is at 'base' (mobile) or larger sizes ('md' or larger)
@@ -38,7 +38,7 @@ function NavBar() {
                     </MenuList>
                     <Box p="2">
                         <Link href="/" _hover={{ textDecoration: 'none' }}>
-                            <Image src={Logo} alt="Logo" boxSize="40px" />
+                            <Image src={Logo} alt="Logo" boxSize="100px" position="absolute" ml="-70px" mt="-50px" />
                         </Link>
                     </Box>
 
@@ -54,7 +54,7 @@ function NavBar() {
                     </Flex>
                     <Box p="2">
                         <Link href="/" _hover={{ textDecoration: 'none' }}>
-                            <Image src={Logo} alt="Logo" boxSize="40px" />
+                            <Image src={Logo} alt="Logo" boxSize="130px" position="absolute" mt="-50px" ml="-100px" />
                         </Link>
                     </Box>
                     <Flex>
