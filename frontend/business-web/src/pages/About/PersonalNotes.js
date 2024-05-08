@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, VStack, Heading, Text, Image, Box } from '@chakra-ui/react';
-import Sample from '../../image/sample1.jpg' // make sure to import the image correctly
+import Sample from '../../image/About/sample1.jpg' // make sure to import the image correctly
 
 function PersonalNotes() {
   return (

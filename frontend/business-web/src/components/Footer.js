@@ -10,43 +10,45 @@ import {
   Flex,
   Heading,
   Grid,
-  SimpleGrid
+  SimpleGrid,
+  VStack,
+  HStack
 } from '@chakra-ui/react';
 import { FaInstagram, FaFacebook, FaTwitter, FaTiktok } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 
 function Footer() {
   return (
-    <Box bgImage='grey.100' bgSize="cover" bgPosition="center" py="10">
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="40px" mb="10" p={100}>
-            <SimpleGrid columns={2} spacing={10}>
-                <Box bg='' height='80px'></Box>
-                <Box bg='' height='80px'></Box>
-                <Box bg='' height='80px'></Box>
-                <Box bg='' height='80px'></Box>
-                <Box bg='' height='80px'></Box>
-            </SimpleGrid>
+    <VStack spacing={4} width="100%" height="40vw" bg="#FBF8F3">
+      {/* First row with 3 columns */}
+      <SimpleGrid columns={3} spacing={5} w="full">
+        <Box p={5} borderWidth="1px">
+          <Text>Column 1, Row 1</Text>
+        </Box>
+        <Box p={5} borderWidth="1px">
+          <Text>Column 2, Row 1</Text>
+        </Box>
+        <Box p={5} borderWidth="1px">
+          <Text>Column 3, Row 1</Text>
+        </Box>
+      </SimpleGrid>
 
-            <Box bg="gray.100" p="4" borderRadius="md">
-                <Heading as="h3" size="lg" mt="4">
-                COLLABORATION
-                </Heading>
-                <Text mt="4">
-                I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
-                </Text>
-            </Box>
-
-            <Box bg="gray.100" p="4" borderRadius="md">
-                <Heading as="h3" size="lg" mt="4">
-                COLLABORATION
-                </Heading>
-                <Text mt="4">
-                I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
-                </Text>
-            </Box>
-
-        </SimpleGrid>
-    </Box>
+      {/* Second row with 4 columns */}
+      <SimpleGrid columns={4} spacing={5} w="full">
+        <Box p={5} borderWidth="1px">
+          <Text>Column 1, Row 2</Text>
+        </Box>
+        <Box p={5} borderWidth="1px">
+          <Text>Column 2, Row 2</Text>
+        </Box>
+        <Box p={5} borderWidth="1px">
+          <Text>Column 3, Row 2</Text>
+        </Box>
+        <Box p={5} borderWidth="1px">
+          <Text>Column 4, Row 2</Text>
+        </Box>
+      </SimpleGrid>
+    </VStack>
   );
 }
 

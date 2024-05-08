@@ -1,21 +1,22 @@
 import React from "react";
-import { Box, Text, Button, VStack, } from '@chakra-ui/react';
-import Background from '../../image/background1.jpg';
-
+import { Box, Text, Button, VStack, Image} from '@chakra-ui/react';
+import Background from '../../image/About/background.jpg';
+import Logo from '../../image/Home/logo.png';
+import { Link } from "react-router-dom";
 
 function Home1() {
 
     return (
         <Box
-            w="100vw"
-            h="auto" // Changed to 'auto' to allow for content below the viewport height
+            w="100%"
+            h="50vw" // Changed to 'auto' to allow for content below the viewport height
             display="flex"
             flexDirection="column"
             alignItems="center"
         >
             {/* Background image container */}
             <Box
-                bgImage={`url(${Background})`}
+                bgImage={Background}
                 bgSize="cover"
                 bgPosition="center"
                 bgRepeat="no-repeat"
@@ -25,33 +26,32 @@ function Home1() {
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
+                height="100%"
+                width="100%"
+                objectFit="cover"  // Ensures the image covers the given dimension
+                objectPosition="center"
             >
-                <VStack spacing={4} textAlign="center">
+                <VStack spacing={4} textAlign="center" p="5%">
                     {/* Title text */}
-                    <Text
-                        color="white"
-                        fontSize="6xl"
-                        fontWeight="bold"
-                        textShadow="2px 2px 20px rgba(0, 0, 0, 0.3)"
-                    >
-                        Howdy Studio
-                    </Text>
-                    {/* Subtitle text */}
-                    <Text
-                        color="white"
-                        fontSize="xl"
-                        fontWeight="semibold"
-                        textShadow="1px 1px 10px rgba(0, 0, 0, 0.3)"
-                    >
-                        Social Media Marketing & Brand & Web Design
-                    </Text>
-                    {/* Get Started button */}
+                     <Image 
+                        src={Logo} 
+                        alt="Logo" 
+                        width= "40vw" 
+                        height="auto"
+                        objectFit="cover"
+                        objectPosition="center"
+                    />
+
                     <Button
-                        size="lg"
+                        margin="4%"
                         colorScheme="blue"
                         variant="solid"
+                        fontSize="2vw"
+                        bg='#4D95B5'
                     >
-                        Get Started
+                        <Link to="/service" style={{ textDecoration: 'none', color: 'white' }}>
+                            Get Started
+                        </Link>
                     </Button>
                 </VStack>
             </Box>

@@ -10,12 +10,16 @@ const styles = {
         overflowX: 'hidden', 
         width: '100vw', 
         position: 'relative', 
-        background: 'grey',
+        background: '#4D95B5',
         padding: '20px',
         color: 'white',
         fontSize: '15px',
         fontWeight: 'bold',
-        opacity: '0.8',
+        // opacity: '0.8',
+        height: "5vh",
+        display: 'flex',
+        alignItems: 'center',
+        fontFamily: 'Maharlika'
     }
 }
 const SlidingText = ({ text }) => {
