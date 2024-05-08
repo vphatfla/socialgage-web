@@ -141,7 +141,7 @@ function Home2() {
             <VStack 
                 bg="#FBF8F3"
                 w="100%"
-                // padding="5%"
+                padding="5vw"
             >
                 <HStack 
                     spacing="5vw" // This adds space between the image and text
@@ -175,21 +175,19 @@ function Home2() {
                     <VStack
                         w="100%" // Adjust the width as needed
                         textAlign="left" // Text aligned to the left
-                        spacing={1} // Adjust the space between text elements
                         align="start" // Aligns VStack contents to the start of the axis
                     >
                         <Text
                             fontFamily="Maharlika"
-                            fontSize="3xl"
                             fontWeight="bold"
                             mb={-4}
-                            fontSize="calc(3vw)"
+                            fontSize="2.5vw"
                         >
                             HOWDY STUDIO IS AN
                         </Text>
                         <Text
                             fontFamily="Maharlika"
-                            fontSize="calc(3vw)"
+                            fontSize="2.5vw"
                             fontWeight="bold"
                             mb={-4}
                         >
@@ -197,7 +195,7 @@ function Home2() {
                         </Text>
                         <Text
                             fontFamily="Maharlika"
-                            fontSize="calc(3vw)"
+                            fontSize="2.5vw"
                             fontWeight="bold"
                             mb={-4}
                         >
@@ -205,8 +203,7 @@ function Home2() {
                         </Text>
                         <Text
                             fontFamily="Maharlika"
-
-                            fontSize="calc(3vw)"
+                            fontSize="2.5vw"
                             fontWeight="bold"
                             mb={-4}
                         >
@@ -215,7 +212,7 @@ function Home2() {
                         <HStack 
                             mt={5} 
                             spacing={4} 
-                            fontSize="calc(2vw)"
+                            fontSize="calc(1.5vw)"
                             fontFamily="Montserrat">
                                 <Box>
                                     <Text>

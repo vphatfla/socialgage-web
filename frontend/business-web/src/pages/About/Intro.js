@@ -39,9 +39,9 @@ function Section1() {
         
     </Flex>
     ):(
-      <Flex direction="row" width="100%" height="40vw" p={5}>
-        <VStack spacing="5" align="flex-start" flex="1" m="4" >
-            <Heading as="h1" size="xl" fontFamily="Maharlika" fontSize="3vw">
+      <Flex direction="row" width="100%" height="40vw" py="7vw" px="12vw">
+        <VStack spacing="5" align="flex-start" flex="1" >
+            <Heading as="h1" size="xl" fontFamily="Maharlika" fontSize="2.5vw">
               MADE FOR THE BRAND THAT TURNS HEADS
               <Text fontFamily="Maharlika">
               — Strategic Branding, Social Media & Design Studio in Muskoka, Ont.
@@ -60,7 +60,8 @@ function Section1() {
         </VStack>
         <Box 
           height="100%"
-          width="40%"
+          width="30%"
+          ml="10vw"
         >
             <Image 
               src={Sample} 

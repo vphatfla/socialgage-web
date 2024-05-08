@@ -98,6 +98,7 @@ function Values() {
                     height="40vw"
                     display="flex"
                     alignItems="center" 
+                    padding="10vw"
                 >
                 
                     <SimpleGrid columns={{ base: 1, md: 3}} 
