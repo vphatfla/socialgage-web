@@ -57,9 +57,8 @@ function Home2() {
                     >
                         <Text
                             fontFamily="Maharlika"
-                            fontSize="3xl"
                             fontWeight="bold"
-                            fontSize="calc(3vw)"
+                            fontSize="3vw"
                         >
                             HOWDY STUDIO IS AN
                         </Text>
@@ -79,7 +78,6 @@ function Home2() {
                         </Text>
                         <Text
                             fontFamily="Maharlika"
-
                             fontSize="calc(3vw)"
                             fontWeight="bold"
                         >
@@ -152,12 +150,13 @@ function Home2() {
                 >
                     {/* Box for the image */}
                     <Box
-                        w="50%" // Adjust the width as needed
+                        w="100vw" // Adjust the width as needed
                         h="30vw"
                         sx={{
                             transition: 'transform 0.8s ease-out',
                             transform: inView ? 'translateX(0)' : 'translateX(-100%)', // 'translateX(-100%)' is more generic and works better with different layouts
                         }}
+                        bg="red"
                     >
                         <Image
                             src={Sample}
@@ -170,63 +169,65 @@ function Home2() {
 
                         />
                     </Box>
-
-                    {/* Box for the text */}
-                    <VStack
-                        w="100%" // Adjust the width as needed
-                        textAlign="left" // Text aligned to the left
-                        align="start" // Aligns VStack contents to the start of the axis
+                    
+                    <Box
+                        h="30vw"    
                     >
-                        <Text
-                            fontFamily="Maharlika"
-                            fontWeight="bold"
-                            mb={-4}
-                            fontSize="2.5vw"
+                        <VStack
+                            w="100%" // Adjust the width as needed
+                            align="start" 
                         >
-                            HOWDY STUDIO IS AN
-                        </Text>
-                        <Text
-                            fontFamily="Maharlika"
-                            fontSize="2.5vw"
-                            fontWeight="bold"
-                            mb={-4}
-                        >
-                            INDEPENDENT CREATIVE STUDIO
-                        </Text>
-                        <Text
-                            fontFamily="Maharlika"
-                            fontSize="2.5vw"
-                            fontWeight="bold"
-                            mb={-4}
-                        >
-                            SPECIALIZING IN SOCIAL MEDIA
-                        </Text>
-                        <Text
-                            fontFamily="Maharlika"
-                            fontSize="2.5vw"
-                            fontWeight="bold"
-                            mb={-4}
-                        >
-                            BRANDING & WEB DESIGN
-                        </Text>
-                        <HStack 
-                            mt={5} 
-                            spacing={4} 
-                            fontSize="calc(1.5vw)"
-                            fontFamily="Montserrat">
-                                <Box>
-                                    <Text>
-                                        Hi, I'm McKenna! I use a strategy & an experience-driven approach to elevate your brand. With an unmatched eye for aesthetics, stand out with Howdy Studio
-                                    </Text>
-                                </Box>
-                                <Box>
-                                    <Text>
-                                        Howdy Studio is a creative agency that specializes in social media. We help brands and businesses grow their online presence through creative content and strategic planning.
-                                    </Text>
-                                </Box>
-                        </HStack>
-                        {/* ...additional information text goes here... */}
-                    </VStack>
+                            <Text
+                                fontFamily="Maharlika"
+                                fontWeight="bold"
+                                mb={-4}
+                                fontSize="2.5vw"
+                            >
+                                HOWDY STUDIO IS AN
+                            </Text>
+                            <Text
+                                fontFamily="Maharlika"
+                                fontSize="2.5vw"
+                                fontWeight="bold"
+                                mb={-4}
+                            >
+                                INDEPENDENT CREATIVE STUDIO
+                            </Text>
+                            <Text
+                                fontFamily="Maharlika"
+                                fontSize="2.5vw"
+                                fontWeight="bold"
+                                mb={-4}
+                            >
+                                SPECIALIZING IN SOCIAL MEDIA
+                            </Text>
+                            <Text
+                                fontFamily="Maharlika"
+                                fontSize="2.5vw"
+                                fontWeight="bold"
+                                mb={-4}
+                            >
+                                BRANDING & WEB DESIGN
+                            </Text>
+                            <HStack 
+                                mt={5} 
+                                spacing={4} 
+                                fontSize="calc(1.5vw)"
+                                fontFamily="Montserrat">
+                                    <Box>
+                                        <Text>
+                                            Hi, I'm McKenna! I use a strategy & an experience-driven approach to elevate your brand. With an unmatched eye for aesthetics, stand out with Howdy Studio
+                                        </Text>
+                                    </Box>
+                                    <Box>
+                                        <Text>
+                                            Howdy Studio is a creative agency that specializes in social media. We help brands and businesses grow their online presence through creative content and strategic planning.
+                                        </Text>
+                                    </Box>
+                            </HStack>
+                            {/* ...additional information text goes here... */}
+                        </VStack>
+                    </Box>
                 </HStack>
 
                 <Box

@@ -13,7 +13,8 @@ import {
   SimpleGrid,
   VStack,
   HStack,
-  Image
+  Image,
+  Button
 } from '@chakra-ui/react';
 import { FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa';
 import { IoIosMail } from "react-icons/io";
@@ -22,10 +23,10 @@ import Logo from '../image/Footer/logo1.png';
 
 function Footer() {
   return (
-    <VStack spacing={4} width="100%" height="40vw" bg="#FBF8F3" fontFamily="Maharlika">
+    <VStack spacing={4} width="100%" height="40vw" bg="#FBF8F3" fontFamily="" p="3vw">
       {/* First row with 3 columns */}
       <SimpleGrid columns={3} spacing={5} w="full" h="50%">
-        <Box p="3vw" borderWidth="1px" h="full">
+        <Box pb="3vw" px="3vw" borderWidth="1px" h="full">
           <VStack align="left">
             <Text fontSize="1.5vw" mb="1vw" fontWeight="500">EXPLORE</Text>
             <SimpleGrid columns={2} spacing={2} fontSize="1.5vw" mb="1vw">
@@ -106,9 +107,27 @@ function Footer() {
             </Box>
         </Box>
 
-        <Box p={5} borderWidth="1px">
-          <Text>Column 3, Row 1</Text>
+        <Box fontFamily="" pb="3vw" px="3vw" borderWidth="1px" h="full" alignItems="right" textAlign="right">
+          <Box>
+            <Text fontSize="1.5vw" mb="1vw" fontWeight="500">EXPLORE</Text>
+          </Box>
+          
+          <Box>
+            <VStack fontSize="1.5vw" align="right" spacing={0}>
+                <Text>Follow my Instagram to see behind</Text>
+                <Text>the scenes content, exclusive tips &</Text>
+                <Text>stay updated in real time!</Text>
+            </VStack>
+          </Box>
+
+          <Box mt="1vw">
+            <Button fontSize="1.5vw" width="100%" textColor="#FBF8F3" backgroundColor="#4D95B5"> 
+              FOLLOW SOCIALGAGE
+            </Button>
+          </Box>
+          
         </Box>
+
       </SimpleGrid>
 
       {/* Second row with 4 columns */}
