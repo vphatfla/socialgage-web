@@ -20,13 +20,15 @@ import { FaInstagram, FaFacebook, FaTiktok } from 'react-icons/fa';
 import { IoIosMail } from "react-icons/io";
 import { IoMailOutline } from 'react-icons/io5';
 import Logo from '../image/Footer/logo1.png';
+import Photo from '../image/Footer/background.jpg'
 
 function Footer() {
   return (
-    <VStack spacing={4} width="100%" height="40vw" bg="#FBF8F3" fontFamily="" p="3vw">
+    <>
+    <VStack spacing="1vw" width="100%" height="auto" bg="#FBF8F3" p="3vw">
       {/* First row with 3 columns */}
-      <SimpleGrid columns={3} spacing={5} w="full" h="50%">
-        <Box pb="3vw" px="3vw" borderWidth="1px" h="full">
+      <SimpleGrid columns={3} spacing="0.8vw" w="full">
+        <Box pb="3vw" px="2vw" h="full" borderRight="0.1vw solid #4D95B5">
           <VStack align="left">
             <Text fontSize="1.5vw" mb="1vw" fontWeight="500">EXPLORE</Text>
             <SimpleGrid columns={2} spacing={2} fontSize="1.5vw" mb="1vw">
@@ -70,53 +72,38 @@ function Footer() {
           </VStack>
         </Box>
 
-        <Box borderWidth="1px">
-        
-            {/* Background image container */}
-            <Box
-                bgSize="cover"
-                bgPosition="center"
-                bgRepeat="no-repeat"
-                w="100%"
-                h="100vh" // Set the height of the image container to be full screen
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-                alignItems="center"
-                height="100%"
-                width="100%"
-                objectFit="cover"  // Ensures the image covers the given dimension
-                objectPosition="center"
-            >
-                <VStack position="relative" bottom="6vw" spacing={4} textAlign="center" p="5%">
-                    {/* Title text */}
-                     <Image 
-                        src={Logo} 
-                        alt="Logo" 
-                        height="auto"
-                        width="80%"
-                        objectFit="cover"
-                        objectPosition="center"
-                    />
-                    <Text position="relative" bottom="6vw" fontSize="2vw" mb="1vw" fontWeight="500">
-                      Made for the Brand that
-                      <br />
-                      Turns Heads
-                    </Text>
-                </VStack>
-            </Box>
+        <Box height="20vw" borderX="0.1vw solid #4D95B5">
+      
+            <VStack textAlign="center" >
+                {/* Title text */}
+                <Image 
+                    src={Logo} 
+                    alt="Logo" 
+                    height="auto"
+                    width="20vw"
+                    objectFit="cover"
+                    objectPosition="center"
+                    position="relative"
+                    bottom="2vw"
+                />
+                <Text position="relative" bottom="7vw" fontSize="1.5vw" fontWeight="500">
+                  Made for the Brand that
+                  <br />
+                  Turns Heads
+                </Text>
+            </VStack>
         </Box>
 
-        <Box fontFamily="" pb="3vw" px="3vw" borderWidth="1px" h="full" alignItems="right" textAlign="right">
+        <Box pb="3vw" px="2vw" h="full" alignItems="right" textAlign="right" borderLeft="0.1vw solid #4D95B5">
           <Box>
-            <Text fontSize="1.5vw" mb="1vw" fontWeight="500">EXPLORE</Text>
+            <Text fontSize="1.5vw" mb="1vw" fontWeight="500">DON'T BE A STRANGER</Text>
           </Box>
           
           <Box>
             <VStack fontSize="1.5vw" align="right" spacing={0}>
-                <Text>Follow my Instagram to see behind</Text>
-                <Text>the scenes content, exclusive tips &</Text>
-                <Text>stay updated in real time!</Text>
+              <Text textAlign="right">Follow my Instagram to see behind</Text>
+              <Text textAlign="right">the scenes content, exclusive tips &</Text>
+              <Text textAlign="right">stay updated in real time!</Text>
             </VStack>
           </Box>
 
@@ -131,21 +118,58 @@ function Footer() {
       </SimpleGrid>
 
       {/* Second row with 4 columns */}
-      <SimpleGrid columns={4} spacing={5} w="full">
-        <Box p={5} borderWidth="1px">
-          <Text>Column 1, Row 2</Text>
+      <SimpleGrid p="2vw" mt="2vw" columns={4} spacing="1vw" w="full" h="20vw">
+        <Box borderWidth="1px" height="20vw">
+        <Image 
+            src={Photo} 
+            alt="Logo"
+            height="100%"
+            width="100%"
+            objectFit="cover"
+            objectPosition="center"
+        />
         </Box>
-        <Box p={5} borderWidth="1px">
-          <Text>Column 2, Row 2</Text>
+
+        <Box borderWidth="1px" height="20vw">
+        <Image 
+            src={Photo} 
+            alt="Logo"
+            height="100%"
+            width="100%"
+            objectFit="cover"
+            objectPosition="center"
+        />
         </Box>
-        <Box p={5} borderWidth="1px">
-          <Text>Column 3, Row 2</Text>
+
+        <Box borderWidth="1px" height="20vw">
+        <Image 
+            src={Photo} 
+            alt="Logo"
+            height="100%"
+            width="100%"
+            objectFit="cover"
+            objectPosition="center"
+        />
         </Box>
-        <Box p={5} borderWidth="1px">
-          <Text>Column 4, Row 2</Text>
+
+        <Box borderWidth="1px" height="20vw">
+        <Image 
+            src={Photo} 
+            alt="Logo"
+            height="100%"
+            width="100%"
+            objectFit="cover"
+            objectPosition="center"
+        />
         </Box>
       </SimpleGrid>
     </VStack>
+    <Box fontSize="1vw" mt="2vw" height="3vw" bg="#4D95B5" display="flex" alignItems="center" justifyContent="center" fontWeight="500">
+      <Text fontFamily= "Montserrat">
+        COPYRIGHT SOCIALGAGE STUDIO 2024 ©
+      </Text>
+    </Box>
+    </>
   );
 }
 
