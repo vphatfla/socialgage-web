@@ -7,6 +7,7 @@ function Values() {
 
     return (
         <>
+        <Box mb="1.5%" borderY="0.15vw solid #4D95B5" py="0.2%"/>
             {isMobile ? (
                 <Box 
                     id="values-container"
@@ -26,10 +27,10 @@ function Values() {
                                 width="100%"
                                 height= "auto"
                                 mx="auto" // Center the grid
-                                
+                                textColor="#FBF8F3"
                     >
                         {/* Repeat this Box for each value you have */}
-                        <Box bg="#FBF8F3" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -47,7 +48,8 @@ function Values() {
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>
                         </Box>
-                        <Box bg="#FBF8F3" p="5%" borderRadius="3xl" textAlign="center">
+                        
+                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -65,7 +67,7 @@ function Values() {
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>
                         </Box>
-                        <Box bg="#FBF8F3" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -94,26 +96,27 @@ function Values() {
                     bgImage={Background1} 
                     bgSize="cover" 
                     bgPosition="center" 
-                    width="100vw"
-                    height="40vw"
+                    // width="100vw"
+                    // height="40%"
                     display="flex"
                     alignItems="center" 
-                    padding="10vw"
+                    padding="8%"
                 >
                 
                     <SimpleGrid columns={{ base: 1, md: 3}} 
                                 spacing="7%" 
                                 p="5%"
                                 mx="auto" // Center the grid
+                                textColor={"#FBF8F3"}
                     >
                         {/* Repeat this Box for each value you have */}
-                        <Box bg="#FBF8F3" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
                                         as="h3" 
                                         fontSize="2vw"
-                                        
+                                        mb="10%"
                                     >
                                         COLLABORATION
                                     </Heading>
@@ -126,13 +129,13 @@ function Values() {
                                 </Text>
                         </Box>
 
-                        <Box bg="#FBF8F3" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
                                         as="h3" 
                                         fontSize="2vw"
-                                        
+                                        mb="10%"
                                     >
                                         COLLABORATION
                                     </Heading>
@@ -144,14 +147,13 @@ function Values() {
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>
                         </Box>
-
-                        <Box bg="#FBF8F3" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
                                         as="h3" 
                                         fontSize="2vw"
-                                        
+                                        mb="10%"
                                     >
                                         COLLABORATION
                                     </Heading>
@@ -169,6 +171,8 @@ function Values() {
                     </SimpleGrid>
                 </Box>
             )}
+
+        <Box mt="1.5%" borderY="0.15vw solid #4D95B5" py="0.2%"/>
         </>
     );
 }

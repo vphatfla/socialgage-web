@@ -18,7 +18,6 @@ function Home2() {
             <VStack 
                 bg="#FBF8F3"
                 w="100%"
-                // padding="5%"
             >
                 <HStack 
                     spacing="5vw" // This adds space between the image and text
