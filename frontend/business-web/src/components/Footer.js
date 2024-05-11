@@ -112,7 +112,7 @@ function Footer() {
       </>
     ) : (
       <>
-      <VStack bg="#FBF8F3" spacing="1vw" width="100%" height="auto" bg="#FBF8F3" p="3vw">
+      <VStack bg="#FBF8F3" spacing="1vw" width="100%" height="auto" p="3vw">
         {/* First row with 3 columns */}
         <SimpleGrid columns={3} spacing="0.8%" w="full">
           <Box pb="3vw" px="2vw" h="full" borderRight="0.15vw solid #4D95B5">

@@ -8,7 +8,7 @@ function Home2() {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5,
-      });
+    });
 
     const isMobile = useBreakpointValue({ base: true, md: false });
 
