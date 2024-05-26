@@ -30,7 +30,7 @@ function Values() {
                                 textColor="#FBF8F3"
                     >
                         {/* Repeat this Box for each value you have */}
-                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" borderWidth={"0.3vw"} fontWeight={"500"} textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -49,7 +49,7 @@ function Values() {
                                 </Text>
                         </Box>
                         
-                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" borderWidth={"0.3vw"} fontWeight={"500"} textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -67,7 +67,8 @@ function Values() {
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>
                         </Box>
-                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" textAlign="center">
+
+                        <Box bg="#4D95B5" p="5%" borderRadius="3xl" borderWidth={"0.3vw"} fontWeight={"500"} textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -105,12 +106,12 @@ function Values() {
                 
                     <SimpleGrid columns={{ base: 1, md: 3}} 
                                 spacing="7%" 
-                                p="5%"
+                                p="4%"
                                 mx="auto" // Center the grid
                                 textColor={"#FBF8F3"}
                     >
                         {/* Repeat this Box for each value you have */}
-                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" borderWidth={"0.2vw"} textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -124,12 +125,13 @@ function Values() {
                                 <Text 
                                     mt="3%"
                                     fontSize= '1.5vw'
+                                    fontWeight={"500"}
                                 >
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>
                         </Box>
 
-                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" textAlign="center">
+                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" borderWidth={"0.2vw"} textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -143,11 +145,13 @@ function Values() {
                                 <Text 
                                     mt="3%"
                                     fontSize= '1.5vw'
+                                    fontWeight={"500"}
                                 >
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>
                         </Box>
-                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" textAlign="center">
+
+                        <Box bg="#4D95B5" p="10%" borderRadius="3xl" borderWidth={"0.2vw"} textAlign="center">
                                 {/* <Image borderRadius="full" boxSize="150px" src={{Sample}} alt="Collaboration" /> */}
                                 <Box>
                                     <Heading 
@@ -161,6 +165,7 @@ function Values() {
                                 <Text 
                                     mt="3%"
                                     fontSize= '1.5vw'
+                                    fontWeight={"500"}
                                 >
                                     I value your expertise in your industry and value the importance of effective teamwork. You will be part of every step in the process with complete guidance.
                                 </Text>

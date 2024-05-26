@@ -1,4 +1,4 @@
-import { Image, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Center } from '@chakra-ui/react';
+import {Link, Image, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Center } from '@chakra-ui/react';
 import React, {useState} from 'react';
 import { Collapse, Text } from "@chakra-ui/react";
 import Logo from '../../image/Home/logo.png';
@@ -12,7 +12,7 @@ function Home3() {
     });
 
     return (
-    <Center position={"relative"} bg="#4D95B5">
+    <Center position={"relative"} bg="#4D95B5" ref={ref}>
         <Box 
             width="15%"
             position={"absolute"}
@@ -21,7 +21,7 @@ function Home3() {
             
             sx={{
                 transition: 'transform 0.8s ease-out',
-                transform: `${inView ? 'translateX(0)' : 'translateX(10%)'} rotate(-20deg)`, // 'translateX(-100%)' is more generic and works better with different layouts
+                transform: `${inView ? 'translateX(0)' : 'translateX(-100%)'} rotate(-20deg)`, // 'translateX(-100%)' is more generic and works better with different layouts
             }}
 
         >
@@ -37,16 +37,17 @@ function Home3() {
             position={"absolute"}
             bottom="20%"
             right="5%"
-            
             sx={{
                 transition: 'transform 0.8s ease-out',
-                transform: inView ? 'translateX(0)' : 'translateX(10%)', // 'translateX(-100%)' is more generic and works better with different layouts
+                transform: `${inView ? 'translateX(0)' : 'translateX(50%)'} `, // 'translateX(-100%)' is more generic and works better with different layouts
             }}
 
         >
             <Image 
                 src={Sample}
-                objectFit={"cover"}
+                height={"100%"}
+                width={"100%"}
+                objectFit={"fill"}
                 objectPosition={"center"}
             />
         </Box>
@@ -145,9 +146,9 @@ function Home3() {
 
             </Accordion>
             <Center>
-                <Text textDecoration={"underline"} fontSize={"2vw"}>
+                <Link href="/services" fontStyle={"italic"} textDecoration={"underline"} fontSize={"2vw"}>
                     View Services
-                </Text>
+                </Link>
             </Center>
 
         </Box>

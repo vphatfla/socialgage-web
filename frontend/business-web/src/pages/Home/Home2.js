@@ -32,7 +32,7 @@ function Home2() {
                         h="30vw"
                         sx={{
                             transition: 'transform 0.8s ease-out',
-                            transform: inView ? 'translateX(0)' : 'translateX(-100%)', // 'translateX(-100%)' is more generic and works better with different layouts
+                            transform: inView ? 'translateX(0)' : 'translateX(-100%)',
                         }}
                     >
                         <Image
@@ -41,7 +41,7 @@ function Home2() {
                             fit="cover"
                             height="100%"
                             width="100%"
-                            objectFit="cover"  // Ensures the image covers the given dimension
+                            objectFit="fill"  // Ensures the image covers the given dimension
                             objectPosition="center"
 
                         />
@@ -155,7 +155,6 @@ function Home2() {
                             transition: 'transform 0.8s ease-out',
                             transform: inView ? 'translateX(0)' : 'translateX(-100%)', // 'translateX(-100%)' is more generic and works better with different layouts
                         }}
-                        bg="red"
                     >
                         <Image
                             src={Sample}
@@ -163,7 +162,7 @@ function Home2() {
                             fit="cover"
                             height="100%"
                             width="100%"
-                            objectFit="cover"  // Ensures the image covers the given dimension
+                            objectFit="fill"  // Ensures the image covers the given dimension
                             objectPosition="center"
 
                         />

@@ -5,6 +5,7 @@ import Values from './Values';
 import PersonalIntro from './PersonalIntro';
 import PersonalNotesSection from './PersonalNotes';
 import CallAction from './CallAction';
+import GetToKnow from './GetToKnow';
 // Add any other imports you might need
 
 function About() {
@@ -17,7 +18,8 @@ return (
         {/* Personal Introduction Section */}
         <PersonalIntro />
         {/* Personal Note */}
-        <PersonalNotesSection />
+        {/* <PersonalNotesSection /> */}
+        <GetToKnow />
         {/* Call to Action Section */}
         <CallAction />
     </Box>

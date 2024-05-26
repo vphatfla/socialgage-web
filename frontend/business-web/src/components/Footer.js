@@ -21,6 +21,7 @@ import { IoIosMail } from "react-icons/io";
 import { IoMailOutline } from 'react-icons/io5';
 import Logo from '../image/Footer/logo1.png';
 import Photo from '../image/Footer/background.jpg'
+import Sample from '../image/Footer/sample1.jpg'
 
 function Footer() {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -43,12 +44,12 @@ function Footer() {
                 />
               </Box>
               
-              <Box mt="-15%" mb="5%">
+              <Box mt="-20%" mb="5%">
                 <Text fontSize="3vw">
                   Made for the Brand that Turns Heads
                 </Text>
               </Box>
-              <Box>
+              <Box mt="-3%">
                 <HStack spacing="3vw">
                   <IconButton
                     aria-label="Instagram"
@@ -81,7 +82,7 @@ function Footer() {
                 </HStack>
               </Box>
               
-              <Box mt="10%" display="flex" justifyContent="center">
+              <Box mt="15%" display="flex" justifyContent="center">
                 <VStack >
                   <Box>
                     <Text fontSize="4vw" fontWeight="500">DON'T BE A STRANGER</Text>
@@ -92,7 +93,14 @@ function Footer() {
                     <Text textAlign="right">stay updated in real time!</Text>
                   </VStack>
                   <Box mt="1vw">
-                    <Button fontSize="3vw" width="100%" textColor="#FBF8F3" backgroundColor="#4D95B5"> 
+                    <Button
+                      borderRadius={0}
+                      borderWidth={"0.2vw"} 
+                      borderColor={"black"}
+                      fontSize="3vw" 
+                      width="100%" 
+                      textColor="#FBF8F3" 
+                      backgroundColor="#4D95B5"> 
                       FOLLOW SOCIALGAGE
                     </Button>
                   </Box>
@@ -112,7 +120,7 @@ function Footer() {
       </>
     ) : (
       <>
-      <VStack bg="#FBF8F3" spacing="1vw" width="100%" height="auto" p="3vw">
+      <VStack bg="#FBF8F3" spacing="1vw" width="100%" height="auto" p="3vw" pb={0}>
         {/* First row with 3 columns */}
         <SimpleGrid columns={3} spacing="0.8%" w="full">
           <Box pb="3vw" px="2vw" h="full" borderRight="0.15vw solid #4D95B5">
@@ -199,7 +207,14 @@ function Footer() {
             </Box>
 
             <Box mt="1vw">
-              <Button fontSize="1.5vw" width="100%" textColor="#FBF8F3" backgroundColor="#4D95B5"> 
+              <Button 
+                borderRadius={0}
+                borderWidth={"0.2vw"} 
+                borderColor={"black"}
+                fontSize="1.5vw" 
+                width="100%" 
+                textColor="#FBF8F3" 
+                backgroundColor="#4D95B5"> 
                 FOLLOW SOCIALGAGE
               </Button>
             </Box>
@@ -209,57 +224,58 @@ function Footer() {
         </SimpleGrid>
 
         {/* Second row with 4 columns */}
-        <SimpleGrid p="2vw" mt="2vw" columns={4} spacing="1vw" w="full" h="20vw">
-          <Box borderWidth="1px" height="20vw">
-          <Image 
-              src={Photo} 
-              alt="Logo"
-              height="100%"
-              width="100%"
-              objectFit="cover"
-              objectPosition="center"
-          />
+        <SimpleGrid p="2vw" mt="2vw" columns={4} spacing="1vw" w="full">
+          <Box borderWidth="1px" height="25vw">
+            <Image 
+                src={Sample} 
+                alt="Logo"
+                height="100%"
+                width="100%"
+                objectFit="fill"
+                objectPosition="center"
+            />
           </Box>
 
-          <Box borderWidth="1px" height="20vw">
-          <Image 
-              src={Photo} 
-              alt="Logo"
-              height="100%"
-              width="100%"
-              objectFit="cover"
-              objectPosition="center"
-          />
+          <Box borderWidth="1px" height="25vw">
+            <Image 
+                src={Photo} 
+                alt="Logo"
+                height="100%"
+                width="100%"
+                objectFit="fill"
+                objectPosition="center"
+            />
           </Box>
 
-          <Box borderWidth="1px" height="20vw">
-          <Image 
-              src={Photo} 
-              alt="Logo"
-              height="100%"
-              width="100%"
-              objectFit="cover"
-              objectPosition="center"
-          />
+          <Box borderWidth="1px" height="25vw">
+            <Image 
+                src={Sample} 
+                alt="Logo"
+                height="100%"
+                width="100%"
+                objectFit="fill"
+                objectPosition="center"
+            />
           </Box>
 
-          <Box borderWidth="1px" height="20vw">
-          <Image 
-              src={Photo} 
-              alt="Logo"
-              height="100%"
-              width="100%"
-              objectFit="cover"
-              objectPosition="center"
-          />
+          <Box borderWidth="1px" height="25vw">
+            <Image 
+                src={Photo} 
+                alt="Logo"
+                height="100%"
+                width="100%"
+                objectFit="fill"
+                objectPosition="center"
+            />
           </Box>
         </SimpleGrid>
-      </VStack>
-      <Box fontSize="1vw" mt="2vw" height="3vw" bg="#4D95B5" display="flex" alignItems="center" justifyContent="center" fontWeight="500">
+        <Box fontSize="1vw" mt="2vw" w={"100vw"} height="3vw" bg="#4D95B5" display="flex" alignItems="center" justifyContent="center" fontWeight="500">
         <Text fontFamily= "Montserrat">
           COPYRIGHT SOCIALGAGE STUDIO 2024 ©
         </Text>
       </Box>
+      </VStack>
+      
       </>
     )}
       
